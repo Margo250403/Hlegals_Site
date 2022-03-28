@@ -271,11 +271,60 @@ img{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.publication img{
+.publication{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 14fr 14fr 14fr;
+    grid-template-areas: "portfolio design"
+                           "shop equal"
+                           "novaposhta argency"
+                           "arts studio";
+    gap: 32px;
+    width: 1220px;
+    margin-left: -110px;
+}
+.publication img {
+    width: 680px;
+    height: 100%;
+}
+  
+.publication:nth-child(1) {
+    grid-area: portfolio;
+}
+  
+.publication:nth-child(2) {
+    grid-area: design;
+}
+  
+.publication:nth-child(3) {
+    grid-area: shop;
+}
+  
+.publication:nth-child(4) {
+    grid-area: equal;
+}
+.publication:nth-child(5) {
+    grid-area: novaposhta;
+}
+  
+.publication:nth-child(6) {
+    grid-area: argency;
+}
+  
+.publication:nth-child(7) {
+    grid-area: arts;
+}
+  
+.publication:nth-child(8) {
+    grid-area: studio;
+}
+  
+/* .publication img{
     width: 1200px;
     height: 100%;
     margin-bottom: 40px;
-}
+} */
 
 /* section contacts.css */
 .title-contact{
