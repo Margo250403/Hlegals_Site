@@ -319,12 +319,6 @@ img{
 .publication:nth-child(8) {
     grid-area: studio;
 }
-  
-/* .publication img{
-    width: 1200px;
-    height: 100%;
-    margin-bottom: 40px;
-} */
 
 /* section contacts.css */
 .title-contact{
