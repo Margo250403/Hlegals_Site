@@ -1,3 +1,4 @@
+@import "../css/fonts.css";
 body,
 html{
     font-family: 'Roboto Slab', sans-serif;
@@ -11,7 +12,7 @@ html{
     margin: 0 auto;
 }
 .header{
-    background-image: url("pictures/cover_klaviatura.png");
+    background-image: url("../pictures/cover_klaviatura.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px 100px;
@@ -78,7 +79,7 @@ span{
     color: white;
 }
 .main{
-    background-image: url("pictures/gradient.png");
+    background-image: url("../pictures/gradient.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 56px 180px;
