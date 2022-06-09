@@ -200,7 +200,6 @@ img{
 }
 
 /*section services.css*/
-
 .title-service{
     margin: 120px auto;
 }
@@ -221,36 +220,106 @@ img{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.card-service h2{
+.accordion::after{
+    content: "";
+    display: block;
+    width: 1100px;
+    height: 1px;
+    background-color: rgba(240,20,90,1);
+    border-radius: 1px;
+    margin-top: 12px;
+}
+.accordion__header {
     font-size: 35px;
     line-height: 1.3;
     font-weight: bold;
     color: white;
     text-align: center;
     margin-top: 27px;
-    margin-bottom: 12px;
+    cursor: pointer;
+    padding: 18px;
+    width: 1100px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
-.card-service p{
-    width: 1080px;
+.accordion__content {
     font-size: 22px;
     line-height: 1.5;
     font-weight: 400;
     color: white;
     text-align: center;
+    width: 1080px;
+    padding: 8px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
-.card-service p::after{
-    content: "";
-    display: block;
-    width: 1110px;
-    height: 5px;
-    background-color: rgba(240,20,90,1);
-    border-radius: 1px;
-    margin-top: 27px;
-    margin-bottom: 15px;
+.accordion__header::after {
+    content: '\0279C'; 
+    color: white;
+    font-size: 24px;
+    float: right;
+}  
+.show:after {
+    content: "\0279C";
+    transform: rotate(90deg); 
+}
+.table_price {
+    border-collapse: collapse;
+    border-left: 5px solid rgba(240,20,90,1);
+    border-right: 5px solid rgba(240,20,90,1);
+    border-bottom: 5px solid rgba(240,20,90,1);
+    color: white;
+    width:950px;
+    margin: 35px auto;
+}
+.table_price caption {
+    background: rgba(240,20,90,1); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.table_price td, .table_price th {
+    padding: 12px 35px;
+    font-size: 20px;
+}
+.table_price th {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.table_price tr:nth-child(2n) {
+    background-color: #4d356b;
+}
+.table_price td:last-of-type {
+    text-align: center;
+}
+.table_price a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(240,20,90,1);
+    box-shadow: 2px 2px 0 0 #a22800;
+    position: relative;
+    color: white;
+}
+.table_price a:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px; 
+    opacity: 0.85;
 }
 
 /*section publication.css*/
-
 .title-publication{
     margin: 120px auto;
 }
@@ -271,7 +340,84 @@ img{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.publication{
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 950px;
+    position: relative;
+    margin: auto;
+}
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.fade2 {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* .carousel{
 
     display: grid;
     grid-template-columns: auto auto;
@@ -284,41 +430,41 @@ img{
     width: 1220px;
     margin-left: -110px;
 }
-.publication img {
+.carousel img {
     width: 680px;
     height: 100%;
 }
   
-.publication:nth-child(1) {
+.carousel:nth-child(1) {
     grid-area: portfolio;
 }
   
-.publication:nth-child(2) {
+.carousel:nth-child(2) {
     grid-area: design;
 }
   
-.publication:nth-child(3) {
+.carousel:nth-child(3) {
     grid-area: shop;
 }
   
-.publication:nth-child(4) {
+.carousel:nth-child(4) {
     grid-area: equal;
 }
-.publication:nth-child(5) {
+.carousel:nth-child(5) {
     grid-area: novaposhta;
 }
   
-.publication:nth-child(6) {
+.carousel:nth-child(6) {
     grid-area: argency;
 }
   
-.publication:nth-child(7) {
+.carousel:nth-child(7) {
     grid-area: arts;
 }
   
-.publication:nth-child(8) {
+.carousel:nth-child(8) {
     grid-area: studio;
-}
+} */
 
 /* section contacts.css */
 .title-contact{
@@ -353,56 +499,4 @@ img{
     font-weight: 500;
     text-align: justify;
     color: white;
-}
-.table_price {
-    border-collapse: collapse;
-    border-left: 5px solid rgba(240,20,90,1);
-    border-right: 5px solid rgba(240,20,90,1);
-    border-bottom: 5px solid rgba(240,20,90,1);
-    color: white;
-    width:950px;
-    margin: 25px auto;
-}
-  .table_price caption {
-    background: rgba(240,20,90,1); 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
-    color: white;
-    font-size: 26px;
-    text-align: center;
-    font-weight: bold;
-    margin: 0;
-}
-  .table_price td, .table_price th {
-    padding: 12px 35px;
-    font-size: 20px;
-}
-  .table_price th {
-    text-align: left;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-}
-  .table_price tr:nth-child(2n) {
-    background-color: #4d356b;
-}
-  .table_price td:last-of-type {
-    text-align: center;
-}
-  .table_price a {
-    display: inline-block;
-    padding: 5px 10px;
-    background: rgba(240,20,90,1);
-    box-shadow: 2px 2px 0 0 #a22800;
-    position: relative;
-    color: white;
-}
-  .table_price a:hover {
-    box-shadow: none;
-    top: 2px;
-    left: 2px; 
-    opacity: 0.85;
 }

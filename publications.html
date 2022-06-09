@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Публікації | Hlegals</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
     <header class="header">
-        <nav>
-            <div class="container">
-                <div class="nav-row">
-                    <a href="" class="logo">
-                        <span>h</span>legals
-                    </a>
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a href="index.html"> Головна сторінка </a>
-                            </li>
-                            <li>
-                                <a href="services.html"> Послуги </a>
-                            </li>
-                            <li>
-                                <a href="publications.html"> Публікації </a>
-                            </li>
-                            <li>
-                                <a href="contacts.html"> Контакти </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="title-publication">
-                    <h1>ПУБЛІКАЦІЇ</h1>
-                </div>
+      <nav>
+        <div class="container">
+          <div class="nav-row">
+            <a href="" class="logo"> <span>h</span>legals </a>
+            <div class="navigation">
+              <ul>
+                <li>
+                  <a href="index.html"> Головна сторінка </a>
+                </li>
+                <li>
+                  <a href="services.html"> Послуги </a>
+                </li>
+                <li>
+                  <a href="publications.html"> Публікації </a>
+                </li>
+                <li>
+                  <a href="contacts.html"> Контакти </a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </div>
+          <div class="title-publication">
+            <h1>ПУБЛІКАЦІЇ</h1>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
-        <div class="publication">
-            <img src="pictures/portfolio.jpg" alt="portfolio">
-            <img src="pictures/design.png" alt="design">
-            <img src="pictures/shop.png" alt="shop">
-            <img src="pictures/equal.jpg" alt="equal">
-            <img src="pictures/novaposhta.jpeg" alt="novaposhta">
-            <img src="pictures/argency.jpg" alt="argency">
-            <img src="pictures/arts.jpg" alt="arts">
-            <img src="pictures/studio.jpg" alt="studio">
-        </div>      
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="pictures/portfolio.jpg"
+            alt="portfolio" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="pictures/equal.jpg" alt="equal" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img
+            src="pictures/novaposhta.jpeg" alt="novaposhta" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="pictures/argency.jpg" alt="argency" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="pictures/arts.jpg" alt="arts" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="pictures/studio.jpg" alt="studio" style="width: 950px; height:580px"/>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="pictures/design.png" alt="design" style="width: 950px; height:580px"/>
+          </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="pictures/shop.png" alt="shop" style="width: 950px; height:580px"/>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+
+      </div>
     </main>
-</body>
+  </body>
 </html>
