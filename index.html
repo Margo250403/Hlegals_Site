@@ -13,48 +13,57 @@
     <meta name="keywords" lang="uk" content="веб-сайт, веб-дизайн, дизайнер, IT">
 
     <title>Головна сторінка | Hlegals</title>
+    <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <div class="container">
-                <div class="nav-row">
-                    <a href="" class="logo">
-                        <span>h</span>legals
-                    </a>
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a href="index.html"> Головна сторінка </a>
-                            </li>
-                            <li>
-                                <a href="services.html"> Послуги </a>
-                            </li>
-                            <li>
-                                <a href="publications.html"> Публікації </a>
-                            </li>
-                            <li>
-                                <a href="contacts.html"> Контакти </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="titles">
-                    <h1>HLEGALS</h1>
-                    <h2>IT COMPANY WEBSITE DESIGN</h2>
-                </div>
+    <section class="menu">
+        <div class="container">
+            <header class="header">
+                <a href="" class="logo">
+                    <span>h</span>legals
+                </a>
+
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="index.html" class="header-nav__link"> О нас </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="services.html" class="header-nav__link"> Послуги </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="team.html" class="header-nav__link"> Команда </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="publications.html" class="header-nav__link"> Публікації </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="contacts.html" class="header-nav__link"> Контакти </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="" class="header-nav__button" id="open">Реєстрація</a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </header>
+            <div class="titles">
+                <h1>HLEGALS</h1>
+                <h2>IT COMPANY WEBSITE DESIGN</h2>
             </div>
-        </nav>
-    </header>
+        </div>
+        </div>
+    </section>
 
     <!-- Start doing main section -->
     <main class="main">
         <section class="hero">
-            <div class="container-small">
-                <iframe width="570" height="260" src="https://www.youtube.com/embed/GQJrzIJEsJ0"
+            <div class="container">
+                <iframe width="570" height="252" src="https://www.youtube.com/embed/GQJrzIJEsJ0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
@@ -67,7 +76,7 @@
                         на
                         сайт.</p>
                     <div class="button">
-                        <a href="services.html">
+                        <a href="services.html" class="button-1">
                             Переглянути послуги
                         </a>
                     </div>
@@ -75,47 +84,49 @@
             </div>
         </section>
         <section class="characteristics">
-            <h2>4 ХАРАКТЕРИСТИКИ ЕФЕКТИВНОГО WEB-ДИЗАЙНУ</h2>
-            <ul>
-                <li>
-                    <div class="cards">
-                        <img src="pictures/strategy.jpg" alt="strategy">
-                        <h3>
-                            Наявність стратегії
-                        </h3>
-                    </div>
-                </li>
+            <div class="container">
+                <h2>4 ХАРАКТЕРИСТИКИ ЕФЕКТИВНОГО WEB-ДИЗАЙНУ</h2>
+                <ul>
+                    <li>
+                        <div class="cards">
+                            <img src="pictures/strategy.jpg" alt="strategy">
+                            <h3>
+                                Наявність стратегії
+                            </h3>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="cards">
-                        <img src="pictures/content.jpg" alt="content">
-                        <h3>
-                            Якість контенту
-                        </h3>
-                    </div>
-                </li>
+                    <li>
+                        <div class="cards">
+                            <img src="pictures/content.jpg" alt="content">
+                            <h3>
+                                Якість контенту
+                            </h3>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="cards">
-                        <img src="pictures/usability.jpg" alt="usability">
-                        <h3>
-                            Зручність використання
-                        </h3>
-                    </div>
-                </li>
+                    <li>
+                        <div class="cards">
+                            <img src="pictures/usability.jpg" alt="usability">
+                            <h3>
+                                Зручність використання
+                            </h3>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="cards">
-                        <img src="pictures/design.jpg" alt="design">
-                        <h3>
-                            Дизайн переконливий, привабливий
-                        </h3>
-                    </div>
-                </li>
-            </ul>
+                    <li>
+                        <div class="cards">
+                            <img src="pictures/design.jpg" alt="design">
+                            <h3>
+                                Дизайн переконливий, привабливий
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="sales">
-            <div class="container-small">
+            <div class="container">
                 <div class="content-sales">
                     <h2>ІТ-САЙТИ ПОВИННІ СТИМУЛЮВАТИ ПРОДАЖІ</h2>
                     <p>Hlegals — це агентство веб-дизайну, яке спеціалізується на IT і технологічних компаніях. Ми
@@ -137,7 +148,181 @@
                 </iframe>
             </div>
         </section>
+
+        <section class="quiz-container">
+            <div class="quiz-box" id="quiz">
+                <div class="quiz-header">
+                    <h2 id="question">Question text</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Question</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">Надіслати</button>
+            </div>
+        </section>
+        <script>
+            const quizData = [
+                {
+                    question: "Чим займається наша компанія?",
+                    a: "юридичні послуги",
+                    b: "дизайн веб-сайтів",
+                    c: "кондитерські послуги",
+                    correct: "b",
+                },
+                {
+                    question: "Яку назву має наша компанія?",
+                    a: "Webdesing-inspiration",
+                    b: "Designshack",
+                    c: "Hlegals",
+                    correct: "c",
+                },
+                {
+                    question: "В якому місті наш головний офіс?",
+                    a: "Дніпро",
+                    b: "Харків",
+                    c: "Львів",
+                    correct: "a",
+                },
+                {
+                    question: "Хто є власником Hlegals?",
+                    a: "Цивань Ігор",
+                    b: "Анна Коваленко",
+                    c: "Марграита Качан",
+                    correct: "c",
+                },
+                {
+                    question: "Які кольри є основними на сайті?",
+                    a: "блакитний, зелений, жовтий",
+                    b: "синій, фіолетовий, малиновий",
+                    c: "білий, чорний, червоний",
+                    correct: "b",
+                },
+            ];
+
+            const quiz = document.getElementById('quiz');
+            const answerElements = document.querySelectorAll('.answer');
+            const questionElement = document.getElementById('question');
+            const a_text = document.getElementById('a_text');
+            const b_text = document.getElementById('b_text');
+            const c_text = document.getElementById('c_text');
+            const submit = document.getElementById('submit');
+
+            let currentQuiz = 0;
+            let score = 0;
+
+            loadQuiz();
+
+            function loadQuiz() {
+                deselectAnswers();
+
+                const currentQuizData = quizData[currentQuiz];
+
+                questionElement.innerText = currentQuizData.question;
+                a_text.innerText = currentQuizData.a;
+                b_text.innerText = currentQuizData.b;
+                c_text.innerText = currentQuizData.c;
+            }
+
+            function deselectAnswers() {
+                answerElements.forEach(answerEl => answerEl.checked = false)
+            }
+
+            function getSelected() {
+                let answer;
+
+                answerElements.forEach(answerEl => {
+                    if (answerEl.checked) {
+                        answer = answerEl.id;
+                    }
+                });
+
+                return answer;
+            }
+
+            submit.addEventListener('click', () => {
+                const answer = getSelected();
+
+                if (answer) {
+                    if (answer === quizData[currentQuiz].correct) {
+                        score++;
+                    }
+
+                    currentQuiz++;
+
+                    if (currentQuiz < quizData.length) {
+                        loadQuiz();
+                    }
+                    else {
+                        quiz.innerHTML = `<h2 сlass="result" style="margin:30px; font-weight: bold; font-size: 24px"; align="center"; > Ви відповіди правильно на ${score}/${quizData.length} питань</h2>
+                        <button classs="one_more_time" onclick="location.reload()">Спробувати ще раз</button>`;
+                    }
+                }
+            });
+        </script>
+
     </main>
+
+    <footer class="footer-container">
+
+        <div class="footer-left">
+
+            <h3><span>h</span>legals</h3>
+            <div class="footer-links">
+                <a href="index.html">О нас</a>
+                ·
+                <a href="services.html">Послуги</a>
+                ·
+                <a href="team.html">Команда</a>
+                ·
+                <a href="publications.html">Публікації</a>
+                ·
+                <a href="contacts.html">Контакти</a>
+            </div>
+            <p class="footer-company-name">Hlegals &copy; 2022</p>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div class="footer-contacts">
+                <a href="#"> Дніпро, вулиця Короленко, 10 </a>
+
+                <p> <a href="#"> +38 (050) 390 15 95 </a></p>
+
+                <p><a href="gmail.com"> contact@hlegals.net </a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="footer-company-about">
+                <span>Про команію</span>
+                <p> Hlegals допоможе у створенні сайту за вашими побажаннями.</p>
+            </div>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/"><img src="pictures/facebook-icon.jpg" alt="facebook-icon"></a>
+                <a href="instagram.com"><img src="pictures/instagram-icon.jpg" alt="facebook-icon"></a>
+                <a href="twitter.com"><img src="pictures/twiter-icon.jpg" alt="facebook-icon"></a>
+
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

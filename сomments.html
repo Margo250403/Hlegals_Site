@@ -1,0 +1,298 @@
+<!-- // const n1 = prompt("Введіть своє ім'я: Наприклад - Маргарита");
+// const n2 = prompt("Введіть своє прізвище: Наприклад - Качан");
+// const n3 = prompt("Як Вас по батькові?: Наприклад - Володимирівна");
+
+// if(n1==null && n2==null && n3==null){
+//   alert("Дія була відмінена");
+// }
+// else{
+//   alert(`Привіт, ${n1}  ${n2}  ${n3}. Радий тебе бачити!` )
+// } -->
+
+
+
+
+
+
+<!-- <div class="calc">
+    <select onchange="calc()" id="type_services">
+            <option value="0">Обрати вид послуги</option>
+            <option value="100">Лендінг </option>
+            <option value="200">Корпоративний сайт</option>
+            <option value="300">Інтерент-магазин</option>
+            <option value="600">Сайт-візитка</option>
+            <option value="600">Сайт онлайн-шкіл</option>
+            <option value="600">Сайт-каталог</option>
+            <option value="800">Сайт-квіз</option>
+
+    </select>
+    <p class="variants_of_design">Кількість варітантів дизайну</p> 
+    <input type="text" id="count" value="1" onchange="calc()" />
+    <label for="seo-opt">SEO-оптимізація</label>
+    <input type="checkbox" onchange="calc()" value="600" id="seo-opt" />
+    <label for="seo-pros">SEO-просування</label>
+    <input type="checkbox" onchange="calc()" value="600" id="seo-pros" />
+
+    <p class="total_price">Вартість: <span id="totalPrice">0</span> $</p>
+</div>
+
+<script>
+     function calc() {
+        
+        const type_services = document.getElementById("type_services");
+        const seo_opt = document.getElementById("seo-opt");
+        const seo_pros = document.getElementById("seo-pros");
+        const count = document.getElementById("count");
+        const totalPrice = document.getElementById("totalPrice");
+
+        let price = 0;
+        price += parseInt(type_services.options[type_services.selectedIndex].value);
+        price += (seo-opt.checked == true) ? parseInt(seo-opt.value) : 0;
+        price += (seo-pros.checked == true) ? parseInt(seo-pros.value) : 0;
+        price = parseInt(count.value) * price;
+        totalPrice.innerHTML = price;
+    }
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="popup-container" id="popup-container">
+                        <div class="form-popup" id="myForm">
+                            <div class="profile">
+                                <h2>Реєстрація</h2>
+                            </div>
+                            <button class="btn-close" id="close"></button>
+                            <form class="form">
+                                <div>
+                                    <label for="name">Ім'я</label>
+                                    <input type="text" class = "name_2"  name="name" placeholder="Введіть своє ім'я" required>
+                                </div>
+                                <div class="radio">
+                                    <h3 class="gender">Стать</h3>
+                                    <label>
+                                        <input type="radio" name="sex" id="genderMan" value="чоловіча">чоловіча
+                                        <div class="radio-control male"></div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sex" id="genderWomen" value="жіноча">жіноча
+                                        <div class="radio-control female"></div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="email">E-mail</label>
+                                    <input  class = "email_2" type="email" name="email" placeholder="Введіть свій email" required>
+                                </div>
+                                <div>
+                                    <label for="email">Номер телефону</label>
+                                    <input type="tel" name="tel" placeholder="Введіть свій номер телефону" required>
+                                </div>
+                                <div>
+                                    <label for="country">Країна</label>
+                                    <select name="country">
+                                        <option disabled selected>Оберіть країну проживання </option>
+                                        <option value="Україна">Україна</option>
+                                        <option value="Велика Британія">Велика Британія</option>
+                                        <option value="Польша">Польша</option>
+                                        <option value="Франція">Франція</option>
+                                        <option value="Іспанія">Іспанія</option>
+                                    </select>
+                                </div>
+                                <button type="submit">Надіслати</button>
+                            </form>
+                        </div>
+                    </div> -->
+
+
+
+<!-- 
+
+                    /* FORM REGISTRATION */
+.popup-container{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.popup-container .visible{
+   pointer-events: auto;
+   opacity: 1;
+}
+
+.form-popup {
+    width: 530px;
+    background: #404071;
+    border-radius: 20px;
+}
+
+.form-popup * {
+    transition: .1s linear
+}
+
+.profile {
+    width: 240px;
+    margin: 10px auto 25px;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.profile h2 {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.form {
+    background: white;
+    position: relative;
+    left: 65px;
+    bottom: 30px;
+    width: 402px;
+    padding: 30px;
+    border-radius: 17px;
+    color: #7b7b7b;
+    margin-bottom: 10px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.name_2 input[type="text"],
+.email_2 input[type="email"],
+input[type="tel"] {
+    border-width: 0;
+    outline: none;
+    margin: 0;
+    width: 342px;
+    padding: 10px 15px;
+    background: #e6e6e6;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus{
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+}
+
+.gender h3 {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.radio label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    width: 50%;
+    line-height: 35px;
+}
+
+#genderMan {
+    transform: scale(1.3);
+    opacity: 0.9;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+#genderWomen {
+    transform: scale(1.3);
+    opacity: 0.9;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+.radio label:hover input~.radio-control,
+.radiol input:focus~.radio-control {
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
+}
+
+select {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;         
+}
+
+button {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 220px;
+    margin: 25px auto 0;
+    background: rgba(240, 20, 90, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.btn-close:before, .btn-close:after {
+    position: absolute;
+    right: 525px;
+    top: 60px;
+    content: '';
+    height: 27px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+.btn-close:hover {
+    opacity: 0.8;
+}
+.btn-close:before {
+    transform: rotate(45deg);
+}
+.btn-close:after {
+    transform: rotate(-45deg);
+} -->
+
+
+<!-- //PopUp
+const open = document.getElementById('open');
+const popupContainer = document.getElementById('popup-container');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () =>{
+  popupContainer.ClassList.add('visible')
+});
+
+close.addEventListener('click', () =>{
+  popupContainer.ClassList.remove('visible')
+}); -->

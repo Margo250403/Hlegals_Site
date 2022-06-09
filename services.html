@@ -6,43 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Послуги | Hlegals</title>
-    <script defer src="main.js"></script>
+    <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <div class="container">
-                <div class="nav-row">
-                    <a href="" class="logo">
-                        <span>h</span>legals
-                    </a>
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a href="index.html"> Головна сторінка </a>
-                            </li>
-                            <li>
-                                <a href="services.html"> Послуги </a>
-                            </li>
-                            <li>
-                                <a href="publications.html"> Публікації </a>
-                            </li>
-                            <li>
-                                <a href="contacts.html"> Контакти </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <section class="menu">
+        <div class="container">
+            <header class="header">
+                <a href="" class="logo">
+                    <span>h</span>legals
+                </a>
+
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="index.html" class="header-nav__link"> О нас </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="services.html" class="header-nav__link"> Послуги </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="team.html" class="header-nav__link"> Команда </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="publications.html" class="header-nav__link"> Публікації </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="contacts.html" class="header-nav__link"> Контакти </a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="header-nav__button"> Реєстрація </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
                 <div class="title-service">
                     <h1>ПОСЛУГИ</h1>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </section>
     <main class="main">
+     <div class="container">
         <ul>
             <li>
                 <div class="accordion">
@@ -153,51 +160,102 @@
             </tr>
             <tr>
                 <td>Лендінг</td>
-                <td>100$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">100$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Корпоративний сайт</td>
-                <td>200$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">200$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Інтерент-магазин</td>
-                <td>300$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">300$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Сайт-візитка</td>
-                <td>600$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">600$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Сайт онлайн-шкіл</td>
-                <td>600$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">600$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Сайт-каталог</td>
-                <td>600$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">600$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>Сайт-квіз</td>
-                <td>800$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">800$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>SEO-оптимізація</td>
-                <td>600$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">600$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
             <tr>
                 <td>SEO-просування</td>
-                <td>600$</td>
-                <td><a>Обрати</a></td>
+                <td class="price">600$</td>
+                <td><a class="choose">Обрати</a></td>
             </tr>
         </table>
+    </div>
+
     </main>
+    <footer class="footer-container">
+
+        <div class="footer-left">
+
+            <h3><span>h</span>legals</h3>
+            <div class="footer-links">
+                <a href="index.html">О нас</a>
+                ·
+                <a href="services.html">Послуги</a>
+                ·
+                <a href="team.html">Команда</a>
+                ·
+                <a href="publications.html">Публікації</a>
+                ·
+                <a href="contacts.html">Контакти</a>
+            </div>
+            <p class="footer-company-name">Hlegals &copy; 2022</p>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div class="footer-contacts">
+                <a href="#"> Дніпро, вулиця Короленко, 10 </a>
+
+                <p> <a href="#"> +38 (050) 390 15 95 </a></p>
+
+                <p><a href="gmail.com"> contact@hlegals.net </a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="footer-company-about">
+                <span>Про команію</span>
+               <p> Hlegals допоможе у створенні сайту за вашими побажаннями.</p>
+            </div>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/"><img src="pictures/facebook-icon.jpg" alt="facebook-icon"></a>
+                <a href="instagram.com"><img src="pictures/instagram-icon.jpg" alt="facebook-icon"></a>
+                <a href="twitter.com"><img src="pictures/twiter-icon.jpg" alt="facebook-icon"></a>
+
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
