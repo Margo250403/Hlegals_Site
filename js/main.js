@@ -1,3 +1,20 @@
+//greetings
+const n1 = window.prompt("Введіть своє ім'я. Наприклад - Маргарита");
+const n2 = window.prompt("Введіть своє прізвище. Наприклад - Качан");
+const n3 = window.prompt("Як Вас по батькові? Наприклад - Володимирівна");
+
+if(n1==null){
+  alert("Дія була відмінена");
+}
+else if(n2==null){
+  alert("Дія була відмінена");
+}
+else if(n3==null){
+  alert("Дія була відмінена");
+}
+else{
+  alert(`Привіт, ${n1} ${n2} ${n3}. Радий тебе бачити!` )
+} 
 
 //accordion
 function dropDownAccordion() {
