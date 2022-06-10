@@ -1,5 +1,3 @@
-
-
 //accordion
 function dropDownAccordion() {
   const acc = document.getElementsByClassName("accordion__header");
@@ -50,4 +48,16 @@ function showSlides(num) {
   dots[slideIndex - 1].className += " active";
 }
 
+//PopUp
+const openPopUp = document.getElementById('open_pop_up');
+const popUp = document.getElementById('pop_up');
+const closePopUp = document.getElementById('close_pop_up');
 
+openPopUp.addEventListener('click', function(e){
+    e.preventDefault();
+    popUp.ClassList.add('visible');
+});
+
+closePopUp.addEventListener('click', () => {
+    popUp.ClassList.remove('visible')
+});

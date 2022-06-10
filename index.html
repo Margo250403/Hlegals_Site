@@ -44,17 +44,35 @@
                             <a href="contacts.html" class="header-nav__link"> Контакти </a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="" class="header-nav__button" id="open">Реєстрація</a>
+                            <a href="" class="header-nav__button" id="open_pop_up">Реєстрація</a>
                         </li>
-                    </ul>       
+                    </ul>
+
+                    <div class="pop_up" id="pop_up">
+                        <div class="pop_up_container">
+                            <div class="pop_up_body">
+                                <div class="registration">
+                                    <h2> Реєстрація </h2>
+                                </div>
+                                <form class="form">
+                                    <input type="text" placeholder="Ім'я" name="name1" class="input">
+                                    <input type="email" placeholder="Email" name="email" class="input">
+                                    <input type='tel' placeholder="Номер телефону" name="tel" class="input">
+                                    <input type="password" placeholder="Пароль" name="pass1" class="input">
+                                    <input type="password" placeholder="Підтвердіть пароль" name="pass2" class="input">
+                                    <button type="submit">Зареєструватися</button>
+                                </form>
+                                <div class="btn-close" id="close_pop_up">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-                
-            </header>
-            <div class="titles">
-                <h1>HLEGALS</h1>
-                <h2>IT COMPANY WEBSITE DESIGN</h2>
-            </div>
         </div>
+
+        </header>
+        <div class="titles">
+            <h1>HLEGALS</h1>
+            <h2>IT COMPANY WEBSITE DESIGN</h2>
         </div>
     </section>
 
@@ -262,8 +280,9 @@
                     if (currentQuiz < quizData.length) {
                         loadQuiz();
                     }
+
                     else {
-                        quiz.innerHTML = `<h2 сlass="result" style="margin:30px; font-weight: bold; font-size: 24px"; align="center"; > Ви відповіди правильно на ${score}/${quizData.length} питань</h2>
+                        quiz.innerHTML = `<h2 сlass="result" style="margin:30px; font-weight: bold; font-size: 24px"; align="center";> Ви відповіди правильно на ${score}/${quizData.length} питань</h2>
                         <button classs="one_more_time" onclick="location.reload()">Спробувати ще раз</button>`;
                     }
                 }
